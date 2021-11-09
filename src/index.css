@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .Sidebar .left-site {
+  height: 100vh;
+  position: fixed;
+  width: 25%;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 0 10px rgba(82, 78, 78, 0.7);
+  transition: 0.5s all linear;
+}
+body .Sidebar .left-site img {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+body .Sidebar .left-site ul {
+  padding-left: 80px;
+  box-sizing: border-box;
+}
+body .Sidebar .left-site ul li {
+  list-style: none;
+  text-transform: capatilize;
+  width: 100% !important;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+body .Sidebar .left-site ul li:hover {
+  width: 120%;
+}
+body .Sidebar .left-site ul li:hover a {
+  opacity: 1;
+}
+body .Sidebar .left-site ul li:hover svg {
+  opacity: 1;
+}
+body .Sidebar .left-site ul li a {
+  color: #505050;
+  opacity: 0.5;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 18px;
+}
+body .Sidebar .left-site ul svg {
+  font-size: 30px;
+  padding-right: 10px;
+  margin-right: 10px;
+  color: #505050;
+  opacity: 0.5;
+}
+body .Sidebar .right-site {
+  width: 75%;
+  margin-left: 25%;
+  transition: 0.5s all linear;
+  background: #f3f2f2;
+  height: 100vh;
+}
+body .Sidebar .right-site nav {
+  background-color: white;
+  height: 60px;
+  z-index: 2;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body .Sidebar .right-site nav .logo {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+body .Sidebar .right-site nav .logo:hover {
+  cursor: pointer;
+}
+body .Sidebar .right-site nav .logo img {
+  width: 100%;
+}
+body .Sidebar .openNav {
+  transform: translateX(0);
+}
+body .Sidebar .closeNav {
+  transform: translateX(-100%);
+  box-shadow: none;
+}
+body .Sidebar .openMenu {
+  width: 100%;
+  margin-left: 0;
+}
+body .Sidebar .closeMenu {
+  margin-left: 25%;
+  width: 75%;
+}/*# sourceMappingURL=index.css.map */

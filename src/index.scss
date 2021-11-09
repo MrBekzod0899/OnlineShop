@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    .Sidebar{
+        .left-site{
+            height: 100vh;
+            position: fixed;
+            width: 25%;
+            top: 0;
+            left: 0;
+            box-shadow : 5px 0 10px rgba(82, 78, 78, 0.7);
+            transition: 0.5s all linear;
+            img{
+
+                margin-left:50px;
+                margin-top:10px;
+                }
+            ul{
+                padding-left:80px;
+                box-sizing:border-box;
+                       
+                li{
+                  list-style:none;
+                  text-transform:capatilize;
+                  width:100% !important;
+                  padding:10px;
+                  box-sizing:border-box;
+                  transition :all 0.2s linear;
+                  &:hover{
+                    
+                    width:120%;   
+                      a{
+                          opacity: 1;
+                        }
+                      svg{
+                         opacity:1;
+                        }
+                    }
+                      a{ 
+                        color:#505050;
+                        opacity:0.5;
+                        font-weight:700;
+                        letter-spacing:2px;
+                        text-decoration:none;  
+                        font-size:18px;
+                        }
+                }
+                svg{
+                    font-size:30px;
+                    padding-right:10px;
+                    margin-right:10px;
+                    color:#505050;
+                    opacity:0.5;
+                    
+                }
+            }
+
+        }
+        .right-site{
+            width: 75%;
+            margin-left: 25%;
+            transition: 0.5s all linear;
+            background: #f3f2f2;
+            height: 100vh;
+            nav{ 
+                background-color: white;
+                height: 60px;
+                z-index: 2;
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                .logo{
+                    width: 30px;
+                    height: 30px;
+                    padding: 2px;
+                     &:hover{
+                            cursor:pointer;
+                        }
+                    img{
+                        width: 100%
+                       
+                    }
+                }
+            }
+        }
+        .openNav{
+            transform: translateX(0);
+        }
+        .closeNav{
+            transform: translateX(-100%);
+            box-shadow: none;
+        }
+        .openMenu{
+            width: 100%;
+            margin-left: 0;
+        }
+        .closeMenu{
+            margin-left: 25%;
+            width: 75%;
+        }
+    }
+}
